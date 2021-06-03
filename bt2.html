@@ -9,10 +9,18 @@
     let index = parseInt(prompt("nhập số muốn tìm"))
     let arr = [1,2,3,4,5,6,7,8,9]
     function check(index, arr) {
+        let show = false
+        let stt = 0;
         for (let i = 0; i < arr.length; i++) {
             if (arr[i] === index) {
-                alert("vị trí của " + index + " là: " + i);
+                stt = i;
+                show = true
             }
+        }
+        if (show) {
+            alert("vị trí của " + index + " là: " + stt);
+        } else {
+            alert("không có giá trị cần tìm trong mảng");
         }
     }
     check(index,arr)
