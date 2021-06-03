@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function check() {
+      let show = false;
+      let count = 0;
+      let arr = ["a","b","c","d","e","f","i"]
+      for (let i = 0; i < arr.length; i++) {
+          if (arr[i] === "a" || arr[i] === "e" || arr[i] === "o" || arr[i] === "u" || arr[i] === "i") {
+              count++;
+              show = true
+          }
+      }
+      if (show) {
+          alert("có " + count + " ký tự nguyên âm trong mảng")
+      } else {
+          alert(show)
+      }
+  }
+  check();
+</script>
+</body>
+</html>
